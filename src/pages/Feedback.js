@@ -16,7 +16,7 @@ function Feedback() {
 
     const feedbackData = { rating, name, phone, comments };
 
-    const backendUrl = process.env.REACT_APP_BACKEND_URL;
+    const backendUrl = process.env.https://restaurant-backend-lptv.onrender.com;
       alert('Feedback submitted successfully!');
       setRating('');
       setName('');
