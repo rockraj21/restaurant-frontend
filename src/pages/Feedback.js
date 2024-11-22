@@ -16,11 +16,7 @@ function Feedback() {
 
     const feedbackData = { rating, name, phone, comments };
 
-    try {
-       await axios.post(
-        'http://localhost:5006/api/feedback/feedback',
-        feedbackData
-      );
+    const backendUrl = process.env.REACT_APP_BACKEND_URL;
       alert('Feedback submitted successfully!');
       setRating('');
       setName('');
