@@ -16,7 +16,11 @@ function Feedback() {
 
     const feedbackData = { rating, name, phone, comments };
 
-    const backendUrl = process.env.https://restaurant-backend-lptv.onrender.com;
+try {
+       await axios.post(
+        'https://restaurant-backend-lptv.onrender.com/api/feedback/feedback',
+        feedbackData
+      );
       alert('Feedback submitted successfully!');
       setRating('');
       setName('');
