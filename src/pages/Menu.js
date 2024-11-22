@@ -8,7 +8,7 @@ function Menu({ isAdmin }) {
 
   useEffect(() => {
     // Fetch menu items from the backend
-    axios.get('http://localhost:5006/api/menu')
+    axios.get('https://restaurant-backend-lptv.onrender.com/api/menu')
       .then((response) => setMenuItems(response.data))
       .catch((error) => console.error('Error fetching menu:', error));
   }, []);
@@ -18,14 +18,14 @@ function Menu({ isAdmin }) {
       alert('Please fill all fields');
       return;
     }
-    axios.post('http://localhost:5006/api/menu/add', newItem)
+    axios.post('https://restaurant-backend-lptv.onrender.com/api/menu/add', newItem)
       .then((response) => setMenuItems(response.data.menuItems))
       .catch((error) => console.error('Error adding item:', error));
     setNewItem({ name: '', description: '', price: '' });
   };
 
   const handleRemoveItem = (id) => {
-    axios.post('http://localhost:5006/api/menu/remove', { id })
+    axios.post('https://restaurant-backend-lptv.onrender.com/api/menu/remove', { id })
       .then((response) => setMenuItems(response.data.menuItems))
       .catch((error) => console.error('Error removing item:', error));
   };
