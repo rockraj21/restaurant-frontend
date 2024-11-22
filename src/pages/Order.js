@@ -9,7 +9,7 @@ function Order() {
 
   useEffect(() => {
     // Fetch menu items from the backend
-    axios.get('http://localhost:5006/api/menu')
+    axios.get('https://restaurant-backend-lptv.onrender.com/api/menu')
       .then((response) => setMenuItems(response.data))
       .catch((error) => console.error('Error fetching menu:', error));
   }, []);
@@ -54,7 +54,7 @@ function Order() {
       return;
     }
 
-    axios.post('http://localhost:5006/api/orders/place', { tableNumber, items: selectedItems, comments })
+    axios.post('https://restaurant-backend-lptv.onrender.com/api/orders/place', { tableNumber, items: selectedItems, comments })
       .then((response) => {
         alert('Order placed successfully!');
         console.log(response.data.order);
