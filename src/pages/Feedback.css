@@ -1,0 +1,94 @@
+/* Feedback Page Styling */
+.feedback-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background-color: var(--primary-bg);
+    color: var(--primary-text);
+  }
+  
+  .feedback-form {
+    width: 100%;
+    max-width: 500px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .feedback-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: var(--highlight-text);
+    text-align: center;
+  }
+  
+  .rating-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .rating-btn {
+    flex: 1;
+    padding: 10px;
+    margin: 0 5px;
+    background-color: var(--button-bg);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .rating-btn:hover {
+    background-color: var(--button-hover-bg);
+  }
+  
+  .rating-btn.selected {
+    background-color: var(--highlight-text);
+    color: white;
+  }
+  
+  .feedback-form input,
+  .feedback-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .feedback-form textarea {
+    resize: none;
+    height: 100px;
+  }
+  .selected-rating {
+    margin: 20px 0;
+    font-size: 18px;
+    color: var(--highlight-text);
+    text-align: center;
+  }
+  
+  
+  .submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--button-bg);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .submit-btn:hover {
+    background-color: var(--button-hover-bg);
+  }
+  

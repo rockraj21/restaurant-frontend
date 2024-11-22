@@ -1,0 +1,114 @@
+/* General Menu Styling */
+.menu-section {
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .menu-title {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ff6f00;
+  }
+  
+  /* Menu Grid */
+  .menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  
+  /* Individual Menu Card */
+  .menu-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .menu-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .menu-item-name {
+    font-size: 22px;
+    margin: 10px 0;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .menu-item-description {
+    font-size: 16px;
+    color: #666;
+    margin: 5px 0;
+  }
+  
+  .menu-item-price {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff6f00;
+    margin-top: 10px;
+  }
+  
+  /* Admin Buttons */
+  .btn-remove {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-remove:hover {
+    background-color: #ff6666;
+  }
+  
+  /* Add Item Form */
+  .add-item-form {
+    margin-top: 40px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .add-item-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .add-item-form input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .add-item-form button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-item-form button:hover {
+    background-color: #45a049;
+  }
+  

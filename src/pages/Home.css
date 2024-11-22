@@ -1,0 +1,142 @@
+/* Global Styling for Home Page */
+.home-container {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background-image: url('hero.jpg'); /* Correct path */
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .hero-content h1 {
+    font-size: 64px;
+    margin-bottom: 10px;
+  }
+  
+  .hero-content h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .hero-buttons .btn-primary,
+  .hero-buttons .btn-secondary {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .btn-primary {
+    background-color: #ff6f00;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .btn-secondary {
+    background-color: white;
+    color: #ff6f00;
+    border-radius: 5px;
+  }
+  
+  /* Chef Recommendations Section */
+  .chef-recommendations {
+    text-align: center;
+    margin: 50px 0;
+  }
+  
+  .chef-recommendations h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  /* Our Journey Section */
+  .our-journey {
+    display: flex;
+    align-items: center;
+    margin: 50px 0;
+    padding: 20px;
+  }
+  
+  .journey-text {
+    flex: 1;
+    padding-right: 20px;
+  }
+  
+  .journey-text h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .journey-text p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  .journey-text .read-more {
+    color: #ff6f00;
+    text-decoration: underline;
+  }
+  
+  .journey-image {
+    flex: 1;
+  }
+  
+  .journey-image img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  /* Features Section */
+  .features {
+    text-align: center;
+    margin: 50px 0;
+  }
+  
+  .features h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .feature-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .feature-item {
+    text-align: center;
+    flex: 1 1 200px;
+  }
+  
+  .feature-item i {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .feature-item p {
+    font-size: 18px;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+ 
+  
