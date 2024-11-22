@@ -42,7 +42,9 @@ button {
 button:hover {
   background-color: var(--button-hover-bg);
 }
-
+.btn-secondary:hover {
+background-color: rgb(215, 205, 205);
+}
 /* Navigation Bar */
 .navbar {
   background-color: var(--primary-bg);
@@ -96,4 +98,22 @@ button:hover {
 .carousel {
   padding: 40px;
   background-color: var(--primary-bg);
+}
+/* Light Mode Variables */
+[data-theme='light'] {
+  --menu-card-border-color: black; /* Black border in light mode */
+}
+
+/* Dark Mode Variables */
+[data-theme='dark'] {
+  --menu-card-border-color: white; /* White border in dark mode */
+}
+/* Light Mode Variables */
+[data-theme='light'] {
+  --navbar-line-color: orange; /* Orange line in light mode */
+}
+
+/* Dark Mode Variables */
+[data-theme='dark'] {
+  --navbar-line-color: #f5f5dc; /* Cream line in dark mode */
 }
