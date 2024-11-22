@@ -20,7 +20,7 @@ function Reservations() {
 
     try {
       const response = await axios.post(
-        'http://localhost:5006/api/reservations/reserve',
+        'https://restaurant-backend-lptv.onrender.com/api/reservations/reserve',
         reservationData
       );
       alert('Reservation successful!');
